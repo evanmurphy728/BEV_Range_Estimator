@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body id="main-body">
+    <h1 class="title">BEV Range Estimator</h1>
+
+    <div class="main-content">
+        <div class="dropdown-container">
+            <div class="dropdown">
+                <div class="dropdown-title">Select Drive Cycle</div>
+                <select>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-title">Select Vehicle</div>
+                <select>
+                    <option value="option1">Option A</option>
+                    <option value="option2">Option B</option>
+                    <option value="option3">Option C</option>
+                </select>
+            </div>
+        </div>
+        <div id = "graph1" class="chart">
+        </div>
+
+        <div class="sliders-container">
+            <div class="slider">
+                <label for="time-slider">Starting Time</label>
+                <input type="range" min="0" max="4600" value="0" id="time-slider">
+                <p><span id="time-select">0</span> s</p>
+            </div>
+            <div class="slider">
+                <label for="battery-capacity">Battery Capacity</label>
+                <input type="range" min="0" max="200" value="100" id="batt-slider">
+                <p><span id="batt-select">100</span> kWh </p>
+            </div>
+            <div class="slider">
+                <label for="regen-efficiency">Regen Efficiency</label>
+                <input type="range" id="regen-efficiency" name="regen-efficiency" min="0" max="100" value="50">
+                <output for="regen-efficiency">50%</output>
+            </div>        
+            <div id="range">
+                Estimated Range:
+                <span id="range-val"></span>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="chart" id="graph2"></div>
+        <div class="chart" id="graph3"></div>
+    </div>
+    <script src="d3.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

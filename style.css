@@ -1,0 +1,218 @@
+.title {
+  color: #c8cccf;
+  /* Text color */
+  font-family: monaco, monospace;
+  /* Font family */
+  font-size: 36px;
+  /* Font size */
+  text-align: center;
+  /* Text alignment */
+  margin-top: 10px;
+  /* Top margin */
+}
+
+body {
+  background-color: #394355;
+}
+
+#graph1 {
+  border-radius: 25px;
+  background-color: #dedee0;
+}
+#graph2 {
+  border-radius: 25px;
+  background-color: #dedee0;
+}
+#graph3 {
+  border-radius: 25px;
+  background-color: #dedee0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row; 
+  margin: auto; 
+  width: 36%; 
+}
+#range {
+  color: #1e56f1;
+  font-weight: bold; 
+  font-size: 30px; 
+  border-radius: 25px;
+  background-color: #dedee0;
+  text-align: center;
+
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+  margin-right: 20px; 
+  /* Adjust the margin as needed */
+}
+
+span {
+  color: #54a5f1;
+  font-weight: bold; 
+}
+p {
+  color: #808edfc4; 
+}
+
+.dropdown {
+  margin-top: 30%;
+  margin-bottom: 10px;
+  /* Adjust the margin between dropdowns */
+}
+
+.dropdown-title {
+  font-weight: bold;
+  font-family: monaco, monospace;
+  /* Make the title bold */
+  margin-bottom: 5px;
+  color: #e0e0e0;
+  text-align: center;
+  /* Add spacing below the title */
+}
+
+.dropdown select {
+  width: 150px;
+  /* Adjust the width of the dropdown */
+  padding: 8px;
+  /* Adjust padding */
+  font-size: 16px;
+  /* Adjust font size */
+}
+
+.sliders-container {
+  font-weight: bold;
+  font-family: monaco, monospace;
+  font-size: 18px;
+  margin-top: 40px;
+  margin-left: 20px;
+  /* Align sliders to the left */
+}
+
+.slider {
+  margin-bottom: 20px;
+  width: 300px;
+  /* Set a fixed width for sliders */
+}
+
+.slider label {
+  display: block;
+  color: #c8cccf;
+}
+
+.slider input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  border-radius: 5px;
+  background: #c8cccf;
+  outline: none;
+  margin-top: 5px;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #1f7ac4;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(15, 84, 11, 0.5);
+
+}
+
+.slider input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider output {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #9c9898;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb:hover,
+.slider input[type="range"]::-moz-range-thumb:hover {
+  background: #45a049;
+
+}
+
+
+.chart-container {
+  width: 350px;
+  height: 250px;
+  border: 1px solid #fffcfc;
+  position: absolute;
+  top: 100px;
+  left: 500px;
+  background-color: #f1eded;
+}
+
+.chart-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: blue;
+}
+
+.axis-labels {
+  position: absolute;
+  font-family: Arial, sans-serif;
+}
+
+#xAxis {
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#yAxis {
+  top: 0;
+  left: -50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#chart {
+  width: 100%;
+  height: 100%;
+}
+
+.data-point {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+#rangeValue {
+  position: relative;
+  text-align: center;
+  width: 60px;
+  font-size: 1.25em;
+  color: #fff;
+  margin-left: 15px;
+  border-radius: 25px;
+}
+
+/* drive cycle percentage*/

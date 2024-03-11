@@ -32,7 +32,7 @@ body {
   display: flex;
   flex-direction: row; 
   margin: auto; 
-  width: 36%; 
+  width: 50%; 
 }
 #range {
   color: #1e56f1;

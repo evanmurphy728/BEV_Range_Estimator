@@ -36,8 +36,8 @@ const range_elem = document.getElementById("range-val");
 
 
 
-const width = 550;
-const height = 550;
+const width = 625;
+const height = 600;
 const marginTop = 50;
 const marginRight = 50;
 const marginBottom = 60;
